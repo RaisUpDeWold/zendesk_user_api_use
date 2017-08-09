@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Core API Test</title>
+    <style type="text/css">
+      table {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" align="center" width="80%">
+      <tr>
+        <td><h1 align="center">Create User</h1></td>
+        <td><h1 align="center">Modify User</h1></td>
+        <td><h1 align="center">Delete User</h1></td>
+      </tr>
+      <tr>
+        <td>
+          <form id="createEndUserForm" name="createEndUserForm" action="createEndUser" method="post">
+            <table border="1" align="center" style="margin: 0;" width="100%">
+              <tr>
+                <td><h3 align="center">First Name</h3></td>
+                <td align="center" style="padding: 10px;"><input id="createEndUser_FirstName" name="createEndUser_FirstName" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">Last Name</h3></td>
+                <td align="center" style="padding: 10px;"><input id="createEndUser_LastName" name="createEndUser_LastName" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">EMail Address</h3></td>
+                <td align="center" style="padding: 10px;"><input id="createEndUser_EMail" name="createEndUser_EMail" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">Phone Number</h3></td>
+                <td align="center" style="padding: 10px;"><input id="createEndUser_Phone" name="createEndUser_Phone" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">Business Name</h3></td>
+                <td align="center" style="padding: 10px;"><input id="createEndUser_BusinessName" name="createEndUser_BusinessName" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding: 10px;">
+                  <input type="submit" id="createEndUser_Submit" value="Create User" style="border-width: 6px; font-size: 25px;" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+        <td>
+          <form id="modifyEndUserForm" name="modifyEndUserForm" action="modifyEndUser" method="post">
+            <table border="1" align="center" style="margin: 0;" width="100%">
+              <tr>
+                <td><h3 align="center">Modified UserID</h3></td>
+                <td align="center" style="padding: 10px;"><input id="modifyEndUser_UserID" name="modifyEndUser_UserID" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">EMail</h3></td>
+                <td align="center" style="padding: 10px;"><input id="modifyEndUser_EMail" name="modifyEndUser_EMail" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">First Name</h3></td>
+                <td align="center" style="padding: 10px;"><input id="modifyEndUser_FirstName" name="modifyEndUser_FirstName" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">Last Name</h3></td>
+                <td align="center" style="padding: 10px;"><input id="modifyEndUser_LastName" name="modifyEndUser_LastName" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">Phone Number</h3></td>
+                <td align="center" style="padding: 10px;"><input id="modifyEndUser_Phone" name="modifyEndUser_Phone" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td><h3 align="center">Business Name</h3></td>
+                <td align="center" style="padding: 10px;"><input id="modifyEndUser_BusinessName" name="modifyEndUser_BusinessName" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding: 10px;">
+                  <input type="submit" id="modifyEndUser_Submit" value="Modify User By UserID" style="border-width: 6px; font-size: 25px;" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+        <td>
+          <form id="deleteEndUserForm" name="deleteEndUserForm" action="deleteEndUser" method="post">
+            <table border="1" align="center" style="margin: 0;" width="100%">
+              <tr>
+                <td><h3 align="center">Delete UserID</h3></td>
+                <td align="center" style="padding: 10px;"><input id="deleteEndUser_UserID" name="deleteEndUser_UserID" type="text" size="30" style="font-size: 20px;" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding: 10px;">
+                  <input type="submit" id="deleteEndUser_Submit" value="Delete User By UserID" style="border-width: 6px; font-size: 25px;" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
